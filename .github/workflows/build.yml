@@ -8,6 +8,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Unzip src folder if present
+        run: |
+          if [ -f src.zip ]; then
+            unzip -o src.zip
+          fi
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
