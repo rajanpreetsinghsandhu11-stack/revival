@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "revival",
+  "version": "${version}",
+  "name": "Revival",
+  "description": "A dark horror mod. The Revived stalks you in the dark. Watch it, and it freezes.",
+  "authors": [
+    "Rajanpreet"
+  ],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.rajanpreet.revival.RevivalMod"
+    ],
+    "client": [
+      "com.rajanpreet.revival.client.RevivalClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
